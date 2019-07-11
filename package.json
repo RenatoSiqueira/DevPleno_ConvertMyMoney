@@ -1,0 +1,19 @@
+{
+  "name": "DevPleno_ConvertMyMoney",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": "https://github.com/RenatoSiqueira/DevPleno_ConvertMyMoney.git",
+  "author": "Renato Siqueira <renatoelysiqueira@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
