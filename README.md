@@ -6,3 +6,6 @@ Projeto para ensino do uso de:
 - Ejs
 - Arrow Functions
 - Jest
+
+
+### Publicado no Zeit: [DevPleno - ConvertMyMoney](https://devplenoconvertmymoney.renatoelysiqueira.now.sh/)
