@@ -1,18 +1,25 @@
 <% include header.ejs %>
 <div class="d-flex justify-content-center">
-    <form method="GET" action="/cotacao">
+    <form method="GET" action="/cotacao" id="form">
         <div class="form-group">
             <label for="cotacao">Cotação</label>
             <input type="text" class="form-control" id="cotacao" name="cotacao" placeholder="Cotação Dolar"
                 value="<%= cotacao %>">
+            <div class="invalid-feedback">
+                Favor preencher a cotação.
+            </div>
         </div>
 
         <div class="form-group">
             <label for="qtde">Quantidade</label>
-            <input type="text" class="form-control" id="qtde" name="quantidade" placeholder="Quantidade de Dolares">
+            <input type="text" class="form-control" id="quantidade" name="quantidade"
+                placeholder="Quantidade de Dolares">
+            <div class="invalid-feedback">
+                Favor preencher a quantidade
+            </div>
         </div>
 
-        <button class="btn btn-block btn-success">Converter!</button>
+        <button id="btnConvert" class="btn btn-block btn-success">Converter!</button>
     </form>
 </div>
 
