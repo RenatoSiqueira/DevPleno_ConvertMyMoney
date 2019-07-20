@@ -8,7 +8,33 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-<script src="validacao.js"></script>
+<script>
+    $('#btnConvert').click(function () {
+        event.preventDefault();
+
+        const cotacao = $('#cotacao').val();
+        const quantidade = $('#quantidade').val();
+
+        $('#cotacao').click(function () {
+            $('#cotacao').removeClass('is-invalid');
+        })
+        $('#quantidade').click(function () {
+            $('#quantidade').removeClass('is-invalid');
+        })
+
+        if (!cotacao) {
+            $('#cotacao').addClass('is-invalid');
+            return false;
+        }
+
+        if (!quantidade) {
+            $('#quantidade').addClass('is-invalid');
+            return false;
+        }
+
+        $('#form').submit();
+    })
+</script>
 
 </body>
 
