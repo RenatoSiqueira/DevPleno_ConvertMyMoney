@@ -1,9 +1,19 @@
 <% include header.ejs %>
+<div class="d-flex justify-content-center">
+    <form method="GET" action="/cotacao">
+        <div class="form-group">
+            <label for="cotacao">Cotação</label>
+            <input type="text" class="form-control" id="cotacao" name="cotacao" placeholder="Cotação Dolar"
+                value="<%= cotacao %>">
+        </div>
 
-<form method="GET" action="/cotacao">
-    <input type="text" name="cotacao" placeholder="Cotação Dolar" value="<%= cotacao %>"><br />
-    <input type="text" name="quantidade" placeholder="Quantidade de Dolares"><br />
-    <button>Converter!</button>
-</form>
+        <div class="form-group">
+            <label for="qtde">Quantidade</label>
+            <input type="text" class="form-control" id="qtde" name="quantidade" placeholder="Quantidade de Dolares">
+        </div>
+
+        <button class="btn btn-block btn-success">Converter!</button>
+    </form>
+</div>
 
 <% include footer.ejs %>

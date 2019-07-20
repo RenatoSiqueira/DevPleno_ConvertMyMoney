@@ -1,9 +1,13 @@
 <% include header.ejs %>
-<div class="result">
+<div class="d-flex justify-content-center">
     <% if(error) { %>
-    <%= error %>
+    <div class="alert alert-danger" role="alert">
+        Atenção: <%= error %>
+    </div>
     <% } else { %>
-    <%= quantidade %> dolares na cotação <%= cotacao %> é igual a <%= conversao %> reais
+    <div class="alert alert-primary" role="alert">
+        <%= quantidade %> dolares na cotação <%= cotacao %> é igual a <%= conversao %> reais
+    </div>
     <% }%>
 </div>
 <% include footer.ejs %>
