@@ -1,26 +1,55 @@
 <% include header.ejs %>
-<div class="d-flex justify-content-center">
-    <form method="GET" action="/cotacao" id="form">
-        <div class="form-group">
-            <label for="cotacao">Cotação</label>
-            <input type="text" class="form-control" id="cotacao" name="cotacao" placeholder="Cotação Dolar"
-                value="<%= cotacao %>">
-            <div class="invalid-feedback">
-                Favor preencher a cotação.
+
+<section class="hero is-fullheight" style='background-color: #F8F7FF'>
+    <% include navbar.ejs %>
+
+    <div class="hero-body">
+        <div class="container">
+
+            <div class="tile is-ancestor">
+                <div class="tile is-4">
+                    <div class="tile is-child box"
+                        style="border-radius: 2rem 0 0 2rem; background-color: #fff; padding: 3rem;">
+                        <article class="tile is-child ">
+                            <form method="GET" action="/cotacao" id="form">
+                                <div class="field">
+                                    <label class="label" for="cotacao">Cotação</label>
+                                    <div class="control">
+                                        <input type="text" class="input" id="cotacao" name="cotacao"
+                                            placeholder="Cotação Dolar" value="<%= cotacao %>">
+                                    </div>
+                                    <p class="help">Favor preencher a cotação.</p>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="qtde">Quantidade</label>
+                                    <input type="text" class="form-control" id="quantidade" name="quantidade"
+                                        placeholder="Quantidade de Dolares">
+                                    <div class="invalid-feedback">
+                                        Favor preencher a quantidade
+                                    </div>
+                                </div>
+
+                                <button id="btnConvert" class="btn btn-block btn-success">Converter!</button>
+                            </form>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile box"
+                        style='background-color: #E4D5F1; border-radius: 0 2rem 2rem 0; padding: 3rem;'>
+                        <article class="tile is-child">
+                            <figure>
+                                <img src="images/image.png" alt="An man with computer">
+                            </figure>
+                            <p class="title is-1" style='color: #2F2656'>Convert My Money</p>
+                            <p class="subtitle is-3">Conversor de Unidades</p>
+                        </article>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </div>
 
-        <div class="form-group">
-            <label for="qtde">Quantidade</label>
-            <input type="text" class="form-control" id="quantidade" name="quantidade"
-                placeholder="Quantidade de Dolares">
-            <div class="invalid-feedback">
-                Favor preencher a quantidade
-            </div>
-        </div>
-
-        <button id="btnConvert" class="btn btn-block btn-success">Converter!</button>
-    </form>
-</div>
-
-<% include footer.ejs %>
+    <% include footer.ejs %>

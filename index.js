@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3003
 
 const { convert, toMoney } = require('./lib/convert')
 const apiBCB = require('./lib/bcb.api')
@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', async (req, res) => {
     const cotacao = await apiBCB.getCotacao()
-    res.render('home',  { 
+    res.render('home', {
         cotacao
     })
 })
@@ -33,7 +33,6 @@ app.get('/cotacao', (req, res) => {
             error: 'Valores Inválidos'
         })
     }
-
 })
 
 app.listen(port, err => {
