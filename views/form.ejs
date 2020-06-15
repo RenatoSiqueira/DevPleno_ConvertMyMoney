@@ -1,0 +1,26 @@
+<div class="tile is-4">
+    <div class="tile is-child box box-left">
+        <article class="tile is-child ">
+            <form method="GET" action="/cotacao" id="form">
+                <div class="field">
+                    <label class="label" for="cotacao">Cotação</label>
+                    <div class="control">
+                        <input type="text" class="input" id="cotacao" name="cotacao"
+                            placeholder="Cotação Dolar" value="<%= cotacao %>">
+                    </div>
+                    <p class="help">Favor preencher a cotação.</p>
+                </div>
+                <div class="field">
+                    <label class="label" for="qtde">Quantidade</label>
+                    <div class="control">
+                        <input type="text" class="input" id="quantidade" name="quantidade"
+                            placeholder="Quantidade de Dolares">
+                    </div>
+                    <p class="help">Favor preencher a quantidade.</p>
+                </div>
+
+                <button id="btnConvert" class="button button-color is-fullwidth">Converter!</button>
+            </form>
+        </article>
+    </div>
+</div>

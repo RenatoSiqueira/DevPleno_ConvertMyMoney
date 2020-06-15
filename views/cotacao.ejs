@@ -1,13 +1,31 @@
-<% include header.ejs %>
-<div class="d-flex justify-content-center">
-    <% if(error) { %>
-    <div class="alert alert-danger" role="alert">
-        Atenção: <%= error %>
+<div class="tile is-4">
+    <div class="tile is-child box box-left">
+        <article class="tile is-child ">
+            <% if(error) { %>
+            <div class="notification is-danger is-light">
+                <strong>Atenção:</strong> <%= error %>
+            </div>
+            <% } else { %>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="images/cifra.png" alt="$ Symbol">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">$ <%= quantidade %></p>
+                        <p class="subtitle is-6">Cotação: R$ <%= cotacao %></p>
+                    </div>
+                </div>
+                <div class="content card-fix">
+                    <p class="title">
+                        Valem R$ <%= conversao %>
+                    </p>
+                </div>
+                <a href='/'><button class="button button-color is-fullwidth">Voltar</button></a>
+            </div>
+            <% } %>
+        </article>
     </div>
-    <% } else { %>
-    <div class="alert alert-primary" role="alert">
-        <%= quantidade %> dolares na cotação <%= cotacao %> é igual a <%= conversao %> reais
-    </div>
-    <% }%>
 </div>
-<% include footer.ejs %>

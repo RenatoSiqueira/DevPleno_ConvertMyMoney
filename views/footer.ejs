@@ -1,29 +1,31 @@
 <div class="hero-foot">
-            <nav class="tabs">
-                <div class="container">
-                    <ul>
-                        <li class="is-active"><a>Overview</a></li>
-                        <li><a>Modifiers</a></li>
-                        <li><a>Grid</a></li>
-                        <li><a>Elements</a></li>
-                        <li><a>Components</a></li>
-                        <li><a>Layout</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <nav class="tabs">
+        <div class="container">
+            <ul>
+                <li class='li-item'> <a>Este Projeto Utiliza:</a></li>
+                <li class='li-item'> <a>NodeJS</a></li>
+                <li class='li-item'> <a>Express</a></li>
+                <li class='li-item'> <a>EJS</a></li>
+                <li class='li-item'> <a>Bulma</a></li>
+                <li class='li-item'> <a>CI/CD</a></li>
+                <li class='li-item'> <a>Jest</a></li>
+                <li class='li-item'> <a>Consumo de API: Axios</a></li>
+                <li class='li-item'> <a>JQuery</a></li>
+                <li class='li-item ml-6'> <a href='https://github.com/RenatoSiqueira/DevPleno_ConvertMyMoney'>
+                <span class="icon">
+  <i class="fab fa-github"></i>
+</span>
+See on Github</a></li>
+            </ul>
         </div>
+    </nav>
+</div>
 </section>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
 
 <script>
     $('#btnConvert').click(function () {
@@ -33,19 +35,19 @@
         const quantidade = $('#quantidade').val();
 
         $('#cotacao').click(function () {
-            $('#cotacao').removeClass('is-invalid');
+            $('#cotacao').removeClass('is-danger');
         })
         $('#quantidade').click(function () {
-            $('#quantidade').removeClass('is-invalid');
+            $('#quantidade').removeClass('is-danger');
         })
 
         if (!cotacao) {
-            $('#cotacao').addClass('is-invalid');
+            $('#cotacao').addClass('is-danger');
             return false;
         }
 
         if (!quantidade) {
-            $('#quantidade').addClass('is-invalid');
+            $('#quantidade').addClass('is-danger');
             return false;
         }
 

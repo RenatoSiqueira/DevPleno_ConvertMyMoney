@@ -1,28 +1,37 @@
-body { 
-    text-align: center;
+.bg-color {
+    background-color: #F8F7FF;
 }
-h1 img {
-    width: 489px;
-    margin: 20px;
+.box-left {
+    border-radius: 2rem 0 0 2rem; 
+    background-color: #fff; 
+    padding: 3rem;
 }
-
-input {
-    border: 1px solid #000000;
-    background-color: #fdfdfd;
-    font-size: 20px;
-    padding: 10px;
-    margin: 4px;
+.hero-fix {
+    padding-top: 0.5rem !important;
 }
-
-button {
-    border: 1px solid #000000;
-    background: #d8d8d8;
-    font-size: 20px;
-    padding: 10px 84px;
+.li-item {
+    background-color: #E4D5F1; 
+    border-radius: 1rem 1rem 0 0;
+    margin-right: 0.2rem;
 }
-
-.result {
-    padding: 10px;
-    border: 1px solid #d8d8d8;
-    background: #fdfdfd;
+.tile-box-fixed {
+    background-color: #E4D5F1; 
+    border-radius: 0 2rem 2rem 0; 
+    padding: 3rem;
+}
+.font-color {
+    color: #2F2656;
+}
+.button-color {
+    background-color: #6236FF;
+    color: #fff;
+}
+.button-color:hover {
+    color: #fff;
+}
+.button-color:focus {
+    color: #fff;
+}
+.card-fix {
+    margin-top: 1.5rem;
 }

@@ -5,19 +5,19 @@ $('#btnConvert').click(function () {
     const quantidade = $('#quantidade').val();
 
     $('#cotacao').click(function () {
-        $('#cotacao').removeClass('is-invalid');
+        $('#cotacao').removeClass('is-danger');
     })
     $('#quantidade').click(function () {
-        $('#quantidade').removeClass('is-invalid');
+        $('#quantidade').removeClass('is-danger');
     })
 
     if (!cotacao) {
-        $('#cotacao').addClass('is-invalid');
+        $('#cotacao').addClass('is-danger');
         return false;
     }
 
     if (!quantidade) {
-        $('#quantidade').addClass('is-invalid');
+        $('#quantidade').addClass('is-danger');
         return false;
     }
 
