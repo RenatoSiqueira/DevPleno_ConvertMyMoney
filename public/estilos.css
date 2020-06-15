@@ -27,6 +27,12 @@
     border-radius: 1rem 1rem 0 0;
     margin-right: 0.2rem;
 }
+.li-item a {
+    cursor: default;
+}
+.linkCursor {
+    cursor: pointer !important;
+}
 .tile-box-fixed {
     background-color: #E4D5F1; 
     padding: 3rem;
