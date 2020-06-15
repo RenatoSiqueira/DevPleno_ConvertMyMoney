@@ -2,9 +2,22 @@
     background-color: #F8F7FF;
 }
 .box-left {
-    border-radius: 2rem 0 0 2rem; 
     background-color: #fff; 
     padding: 3rem;
+}
+@media screen and (min-width: 770px) {
+    .box-left {
+        border-radius: 2rem 0 0 2rem; 
+        padding: 1rem;
+    }
+    .tile-box-fixed {
+        border-radius: 0 2rem 2rem 0; 
+    }
+}
+@media screen and (min-width: 850px) {
+    .box-left {
+        padding: 3rem;
+    }
 }
 .hero-fix {
     padding-top: 0.5rem !important;
@@ -16,7 +29,6 @@
 }
 .tile-box-fixed {
     background-color: #E4D5F1; 
-    border-radius: 0 2rem 2rem 0; 
     padding: 3rem;
 }
 .font-color {
