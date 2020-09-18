@@ -8,6 +8,10 @@
     ],
     "routes": [
         {
+            "src": "/(.*)",
+            "dest": "/"
+        },
+        {
             "src": "/",
             "dest": "/index.js",
             "methods": [
