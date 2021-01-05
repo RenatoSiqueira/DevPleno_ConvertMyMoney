@@ -11,7 +11,7 @@
   "author": "Renato Siqueira <renatoelysiqueira@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "ejs": "^2.6.2",
     "express": "^4.17.1"
   },
