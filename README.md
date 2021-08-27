@@ -25,4 +25,4 @@ Projeto para aprendizado do uso de:
 - Jest
 
 
-### Publicado no Zeit: [ConvertMyMoney](https://convertmymoney.renatosiqueira.dev/)
+### Publicado na Vercel: [ConvertMyMoney](https://convertmymoney.renatosiqueira.dev/)
